@@ -26,12 +26,12 @@ class SomeRandomClass implements SomeRandomInterface {
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :|
 ## History
-Sometime in 2015 Oracle came up with a mock-up project, and @profvanselow/Prof._Vanselow thought
+Sometime in 2015 Oracle came up with a mock-up project, and Prof. Vanselow (profvanselow) thought
 it fit our curriculum. :+1:
 ## Credits
 1. Oracle
 2. IntelliJ
-3. @profvanselow/"Prof. Vanselow"
+3. @profvanselow
 ## License
 Copyright 2018 Juan Gaviria
 
@@ -39,7 +39,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    {http://www.apache.org/licenses/LICENSE-2.0}
+    http://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
