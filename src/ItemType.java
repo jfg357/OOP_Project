@@ -8,5 +8,16 @@
  */
 
 public enum ItemType {
+  // Audio("AU"), AudioMobile("AM"), Visual("VI"), VisualMobile("VM");
+  AU("Audio"), AM("AudioMobile"), VI("Visual"), VM("VisualMobile");
 
+  private String type;
+
+  ItemType(String name) {
+    this.type = name;
+  }
+
+  public String getName() {
+    return type;
+  }
 }
