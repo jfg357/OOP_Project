@@ -29,9 +29,9 @@ class SomeRandomClass implements SomeRandomInterface {
 Sometime in 2015 Oracle came up with a mock-up project, and Prof. Vanselow (@profvanselow) thought
 it fit our curriculum. :+1:
 ## Credits
-1. Oracle
-2. IntelliJ
-3. @profvanselow
+* Oracle
+* IntelliJ
+* @profvanselow
 ## License
 Copyright 2018 Juan Gaviria
 
