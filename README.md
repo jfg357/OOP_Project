@@ -26,7 +26,7 @@ class SomeRandomClass implements SomeRandomInterface {
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :|
 ## History
-Sometime in 2015 Oracle came up with a mock-up project, and Prof. Vanselow (profvanselow) thought
+Sometime in 2015 Oracle came up with a mock-up project, and Prof. Vanselow (@profvanselow) thought
 it fit our curriculum. :+1:
 ## Credits
 1. Oracle
