@@ -7,11 +7,11 @@
  * code before the class will successfully compile.
 */
 
-import java.util.*;
+import java.util.*; // Need to import the Java Utilities to use builtin Date method
 
-public interface Item {
+public interface Item { // Create the Item interface
 
-  String manufacturer = "OracleProduction";
+  String manufacturer = "OracleProduction"; // Instate the
 
   String getName();
 
