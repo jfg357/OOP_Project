@@ -60,7 +60,7 @@ limitations under the License.
   - It is a way of logically grouping classes that are only used in one place.
   - It increases encapsulation.
   - It can lead to more readable and maintainable code.
-###Anonymous Inner Class
+### Anonymous Inner Class
 * It is an inner class without a name and for which only a single object is created. 
 * An anonymous inner class can be useful when making an instance of an object with certain “extras” such as overloading methods of a class or interface, without having to actually subclass a class.
 * Anonymous inner classes are useful in writing implementation classes for listener interfaces in graphics programming.
