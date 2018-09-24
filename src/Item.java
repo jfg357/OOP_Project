@@ -7,18 +7,16 @@
  * code before the class will successfully compile.
  */
 
-import java.time.*;
 import java.util.*; // Need to import the Java Utilities to use builtin Date method
 
 public interface Item { // Create the Item interface
 
-  // Declaration of
-  final String manufacturer = "OracleProduction";
+  // Declaration of the
+  final String MANUFACTURER = "OracleProduction";
 
   String getName();
 
   Date getManufactureDate();
-  LocalDateTime getLocalDateTime();
 
   void setProductionNumber(int pn);
 
