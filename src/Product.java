@@ -36,14 +36,14 @@ public class Product implements Item {
     return serialNumber;
   }
 
-  public Product(String name) {
+  Product(String name) {
     this.name = name;
     this.serialNumber = getSerialNumber();
     this.manufacturedOn = getManufactureDate();
     this.manufacturer = MANUFACTURER;
   }
 
-  public String toString(){
+  public String toString() {
     return "Manufacturer   : " + Product.MANUFACTURER +
         "\nSerial Number  : " + Product.serialNumber +
         "\nDate           : " + Product.manufacturedOn +
