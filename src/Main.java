@@ -4,18 +4,13 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Main extends Application {
-
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("alpha.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 300, 275));
-        primaryStage.show();
-    }
-
-
-    public static void main(String[] args) {
-        launch(args);
-    }
+public class Main {
+  public static void main(String[] args) {
+    Product prod1 = new Product("Product Name");
+    System.out.println(prod1.toString());
+    Product prod2 = new Product("DVD");
+    System.out.println(prod1.toString());
+    Product prod3 = new Product("CD");
+    System.out.println(prod1.toString());
+  }
 }
