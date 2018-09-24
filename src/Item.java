@@ -11,7 +11,8 @@ import java.util.*; // Need to import the Java Utilities to use builtin Date met
 
 public interface Item { // Create the Item interface
 
-  String manufacturer = "OracleProduction"; // Instate the
+  // Declaration of
+  final String manufacturer = "OracleProduction";
 
   String getName();
 
@@ -22,5 +23,7 @@ public interface Item { // Create the Item interface
   void setName(String name);
 
   int getSerialNumber();
+
+
 
 }
