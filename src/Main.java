@@ -11,5 +11,7 @@ public class Main {
     TimeUnit.SECONDS.sleep(2);
     Product prod3 = new Product("CD");
     System.out.println(prod1.toString());
+
+//    System.out.println(ItemType.AudioMobile.getName());
   }
 }
