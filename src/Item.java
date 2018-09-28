@@ -14,14 +14,34 @@ public interface Item { // Create the Item interface
   // Declaration of the
   final String MANUFACTURER = "OracleProduction";
 
+  /**
+   *
+   * @return
+   */
   String getName();
 
+  /**
+   *
+   * @return
+   */
   Date getManufactureDate();
 
+  /**
+   *
+   * @param pn
+   */
   void setProductionNumber(int pn);
 
+  /**
+   *
+   * @param name
+   */
   void setName(String name);
 
+  /**
+   *
+   * @return
+   */
   int getSerialNumber();
 
 

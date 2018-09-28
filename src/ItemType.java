@@ -12,10 +12,18 @@ public enum ItemType {
 
   private String type;
 
+  /**
+   *
+   * @param name
+   */
   ItemType(String name) {
     this.type = name;
   }
 
+  /**
+   *
+   * @return
+   */
   public String getName() {
     return type;
   }
