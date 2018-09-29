@@ -1,32 +1,25 @@
 /**
- * <ul>
- *  <li>Author: Juan Gaviria</li>
- *  <li>Java Enumerator to improve rapid development
- *    The Interface is a group of related methods with empty bodies.
- *    Interfaces form a contract between the class and the outside world, and this contract is enforced
- *    at build time by the compiler. All methods defined by that interface must appear in its source
- *    code before the class will successfully compile.
- *  </li>
- * </ul>
+ * <h1>Java Enum Type</h1>
+ * The <b>Enum</b> type is a special data type that enables for a variable to be a set of predefined
+ * constants. The variable must be equal to one of the values that have been predefined for it.
+ * <p></p>
+ * Because they are constants, the names of an enum type's fields are in uppercase letters.
+ *
+ * @author Juan Gaviria
+ * @version 0.1
+ * @code System.out.println(ItemType.AudioMobile.getName ());
+ * @serial
+ * @since 2018-09-20
  */
-
 public enum ItemType {
-   Audio("AU"), AudioMobile("AM"), Visual("VI"), VisualMobile("VM");
+  Audio("AU"), AudioMobile("AM"), Visual("VI"), VisualMobile("VM");
 
   private String type;
 
-  /**
-   *
-   * @param name
-   */
   ItemType(String name) {
     this.type = name;
   }
 
-  /**
-   *
-   * @return
-   */
   public String getName() {
     return type;
   }
