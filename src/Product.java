@@ -3,13 +3,14 @@ import java.util.*;
 /**
  *
  */
-public class Product implements Item {
+public abstract class Product implements Item {
 
   private static int serialNumber;
   String manufacturer;
   private static Date manufacturedOn;
   private static String name;
   public static int currentProductionNumber;
+
 
   /**
    *
@@ -30,14 +31,10 @@ public class Product implements Item {
     return manufacturedOn;
   }
 
-  /**
-   *
-   * @param serialNumber
-   */
-  @Override
-  public void setProductionNumber(int serialNumber) {
-    currentProductionNumber += 1;
-  }
+//  @Override
+//  public void setProductionNumber(int serialNumber) {
+//    currentProductionNumber += 1;
+//  }
 
   /**
    *
@@ -54,8 +51,7 @@ public class Product implements Item {
    */
   @Override
   public int getSerialNumber() {
-    serialNumber = currentProductionNumber + 1;
-    setProductionNumber(serialNumber);
+    serialNumber = currentProductionNumber++;
     return serialNumber;
   }
 
