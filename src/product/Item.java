@@ -1,27 +1,10 @@
+package product;
 /*
  * Copyright (c) 2010, 2013, 2018 Oracle and/or its affiliates. All rights reserved.
  * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
  */
+
 import java.util.*; // Need to import the Java Utilities to use builtin Date method
 
 /**
@@ -37,10 +20,9 @@ import java.util.*; // Need to import the Java Utilities to use builtin Date met
  *
  * <p>This is a <a href="package-summary.html">interface class</a>
  *
- * @param <> the type of the input to the operation
  * @author Juan Gaviria
- * @code Product prod1 = new Device("Product Name");
  * @version 0.1
+ * @code Product prod1 = new Device("Product Name");
  * @serial
  * @since 0.1
  */
@@ -52,13 +34,30 @@ public interface Item {
   String MANUFACTURER = "OraclProduction"; // The final keyword is redundant in Interface
   String DEFAULTNAME = "Product Name"; // The final keyword is redundant in Interface
 
+  /**
+   * @return {@code Name}
+   */
   String getName();
 
+  /**
+   * @return {@code date} formatted per assignment
+   */
   Date getManufactureDate();
 
-  void setProductionNumber(int pn);
+  /**
+   *
+   * @param pn should be retrieved from last operation
+   */
+  void setProductionNumber(int pn); // Need to add a way to track production number
 
+  /**
+   *
+   * @param name to set the name of the product line
+   */
   void setName(String name);
 
+  /**
+   * @return {@code serialNumber}
+   */
   int getSerialNumber();
 }

@@ -1,25 +1,7 @@
+package product;
 /*
  * Copyright (c) 2010, 2013, 2018 Oracle and/or its affiliates. All rights reserved.
  * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
  *
  */
 
@@ -33,8 +15,8 @@
  * <p>This is a <a href="package-summary.html">enum class</a>
  *
  * @author Juan Gaviria
- * @code Product prod1 = new Device("Product Name");
  * @version 0.1
+ * @code Product prod1 = new Device("Product Name");
  * @serial
  * @since 0.1
  */
@@ -43,10 +25,17 @@ public enum ItemType {
 
   private String type;
 
+  /**
+   *
+   * @param name is the product line name
+   */
   ItemType(String name) {
     this.type = name;
   }
 
+  /**
+   * @return {@code Type}
+   */
   public String getName() {
     return type;
   }
