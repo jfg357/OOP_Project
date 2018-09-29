@@ -1,48 +1,38 @@
-/*
- * Author: Juan Gaviria
- * Item Java Interface to improve rapid development
- * The Interface is a group of related methods with empty bodies.
- * Interfaces form a contract between the class and the outside world, and this contract is enforced
- * at build time by the compiler. All methods defined by that interface must appear in its source
- * code before the class will successfully compile.
+/**
+ * <h1>Item Interface</h1>
+ * Item Java <b>Interface</b> to improve rapid development The Interface is a group of related
+ * methods with empty bodies.
+ * <p></p>
+ * <b>Interface</b> form a contract between the class and the outside world, and this
+ * contract is enforced at build time by the compiler.
+ * <p></p>
+ * All methods defined by that interface must appear in its source code before the class will
+ * successfully compile.
+ *
+ * @author Juan Gaviria
+ * @code public abstract class Product implements Item{}
+ * @version 0.1
+ * @serial
+ * @since 2018-09-20
  */
 
-import java.util.*; // Need to import the Java Utilities to use builtin Date method
+// Need to import the Java Utilities to use builtin Date method
 
-public interface Item { // Create the Item interface
+import java.util.*;
 
-  // Declaration of the
-  final String MANUFACTURER = "OracleProduction";
+// Create the Item interface
+public interface Item {
 
-  /**
-   *
-   * @return
-   */
+  // Declaration of the MANUFACTURER constant
+  String MANUFACTURER = "OracleProduction"; // The final keyword is redundant in Interface
+
   String getName();
 
-  /**
-   *
-   * @return
-   */
   Date getManufactureDate();
 
-  /**
-   *
-   * @param pn
-   */
   void setProductionNumber(int pn);
 
-  /**
-   *
-   * @param name
-   */
   void setName(String name);
 
-  /**
-   *
-   * @return
-   */
   int getSerialNumber();
-
-
 }
