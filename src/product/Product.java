@@ -23,7 +23,6 @@ import java.util.*; // Need to import the Java Utilities to use builtin Date met
  *
  * @author Juan Gaviria
  * @version 0.1
- * @code Product prod1 = new Device("Product Name");
  * @serial
  * @since 0.1
  */

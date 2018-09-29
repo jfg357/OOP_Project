@@ -17,7 +17,6 @@ import product.*;
  *
  * @author Juan Gaviria
  * @version 0.1
- * @code product.Product prod1 = new Device("Product Name");
  * @serial
  * @since 0.1
  */

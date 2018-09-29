@@ -11,18 +11,15 @@ import java.util.*; // Need to import the Java Utilities to use builtin Date met
  * <h1>Item Interface</h1>
  * Item Java <b>Interface</b> to improve rapid development The Interface is a group of related
  * methods with empty bodies.
- * <p></p>
  * <b>Interface</b> form a contract between the class and the outside world, and this
  * contract is enforced at build time by the compiler.
- * <p></p>
  * All methods defined by that interface must appear in its source code before the class will
  * successfully compile.
  *
- * <p>This is a <a href="package-summary.html">interface class</a>
+ * <p>This is a <a href="package-summary.html">interface class</a></p>
  *
  * @author Juan Gaviria
  * @version 0.1
- * @code Product prod1 = new Device("Product Name");
  * @serial
  * @since 0.1
  */
