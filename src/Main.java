@@ -16,7 +16,6 @@ import product.*;
  *
  * @author Juan Gaviria
  * @version 0.1
- * @code product.Product prod1 = new dev.Device("Product Name");
  * @serial
  * @since 0.1
  */
@@ -26,6 +25,7 @@ public class Main {
   /**
    *
    * @param args this is the main
+   * @throws InterruptedException when it does
    */
   public static void main(String[] args) throws InterruptedException {
 
