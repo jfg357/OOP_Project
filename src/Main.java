@@ -34,7 +34,7 @@ public class Main {
 
     // Iteration and printing of the enum product.ItemType using Lambda expression
     EnumSet.allOf(ItemType.class)
-        .forEach(type -> System.out.println("Code: " + type.getName() + " -> " + type));
+        .forEach(type -> System.out.println("Code: " + type.getCode() + " -> " + type));
 
     // Simple banner to display current step
     System.out.println("\n########### Step 3 ###########\n");

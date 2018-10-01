@@ -14,27 +14,26 @@ package product;
  * <p>This is a <a href="package-summary.html">enum class</a>
  *
  * @author Juan Gaviria
- * @version 0.1
+ * @version 0.2
  * @serial
  * @since 0.1
  */
 public enum ItemType {
   Audio("AU"), Visual("VI"), AudioMobile("AM"), VisualMobile("VM");
 
-  private String type;
+  String code;
 
   /**
-   *
-   * @param name is the product line name
+   * @param code is the product line code
    */
-  ItemType(String name) {
-    this.type = name;
+  ItemType(String code) {
+    this.code = code;
   }
 
   /**
    * @return {@code Type}
    */
-  public String getName() {
-    return type;
+  public String getCode() {
+    return code;
   }
 }
