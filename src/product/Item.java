@@ -28,7 +28,7 @@ import java.util.*; // Need to import the Java Utilities to use builtin Date met
 public interface Item {
 
   // Declaration of the MANUFACTURER constant
-  String MANUFACTURER = "OraclProduction"; // The final keyword is redundant in Interface
+  String MANUFACTURER = "OracleProduction"; // The final keyword is redundant in Interface
   String DEFAULTNAME = "Product Name"; // The final keyword is redundant in Interface
 
   /**

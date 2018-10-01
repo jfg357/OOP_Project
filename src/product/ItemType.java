@@ -19,7 +19,7 @@ package product;
  * @since 0.1
  */
 public enum ItemType {
-  Audio("AU"), Visual("VI"), AudioMobile("AM"), VisualMobile("VM");
+  AUDIO("AU"), VISUAL("VI"), AUDIO_MOBILE("AM"), VISUAL_MOBILE("VM");
 
   String code;
 

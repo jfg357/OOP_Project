@@ -58,7 +58,7 @@ public abstract class Product implements Item {
    */
   @Override
   public Date getManufactureDate() {
-    manufacturedOn = new Date();
+    manufacturedOn = new java.util.Date();
     return manufacturedOn;
   }
 
