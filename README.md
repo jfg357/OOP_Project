@@ -3,7 +3,7 @@ Template in Java for creating and recording all future multimedia device items f
 ## Installation
 Clone the repository and run in Java >= 8
 ## Usage
-1. First you build your interface. In this project the product.Item interface has been provided.
+1. First you build your interface. In this project the Item interface has been provided.
   ```java
   interface SomeRandomInterface {
     void someRandomEmptyMethod(int newValue);
@@ -19,7 +19,7 @@ class SomeRandomClass implements SomeRandomInterface {
   }
 }
 ```
-3. Extend the abstract class product.Product on your custom class.
+3. Extend the abstract class Product on your custom class.
 ```java
 //This is a Java Class containing Classy things
 public class SomeRandomClass extends Product { 

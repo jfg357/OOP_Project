@@ -4,10 +4,8 @@
  *
  */
 
-import dev.*;
 import java.util.*;
 import java.util.concurrent.*;
-import product.*;
 
 /**
  * This is the main driving class for the project
@@ -32,7 +30,7 @@ public class Main {
     // Simple banner to display current step
     System.out.println("########### Step 2 - Item Type Test ###########\n");
 
-    // Iteration and printing of the enum product.ItemType using Lambda expression
+    // Iteration and printing of the enum ItemType using Lambda expression
     EnumSet.allOf(ItemType.class)
         .forEach(type -> System.out.println("Code: " + type.getCode() + " -> " + type));
 
@@ -45,14 +43,14 @@ public class Main {
     devicesArrayList.add("4K");
     devicesArrayList.add("3D");
 
-    // Display the dev.Device information using the toString method - default constructor
+    // Display the Device information using the toString method - default constructor
     System.out.println(new Device() + "\n");
 
     // simple foreach to iterate through the devicesArrayList
     for (String aDevicesArrayList : devicesArrayList) {
       // Add random timeout to get unique time
       TimeUnit.SECONDS.sleep(new Random().nextInt(3) + 1);
-      // Display the dev.Device information using the toString method
+      // Display the Device information using the toString method
       System.out.println(new Device(aDevicesArrayList).toString() + "\n");
     }
 

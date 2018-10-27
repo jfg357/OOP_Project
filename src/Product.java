@@ -1,4 +1,4 @@
-package product;
+
 /*
  * Copyright (c) 2010, 2013, 2018 Oracle and/or its affiliates. All rights reserved.
  * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
@@ -8,7 +8,7 @@ package product;
 import java.util.*; // Need to import the Java Utilities to use builtin Date method
 
 /**
- * <h1>Abstract Class product.Product</h1>
+ * <h1>Abstract Class Product</h1>
  * <ul>
  * <li>Cannot be instantiated.</li>
  * <li>Can be a subclass. If it does not provide implementations for all of the abstract methods,
@@ -27,7 +27,7 @@ import java.util.*; // Need to import the Java Utilities to use builtin Date met
  * @since 0.1
  */
 
-// Declaration of abstract class product.Product
+// Declaration of abstract class Product
 public abstract class Product implements Item {
 
   /**

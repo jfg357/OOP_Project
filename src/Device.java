@@ -1,15 +1,13 @@
-package dev;
+
 /*
  * Copyright (c) 2010, 2013, 2018 Oracle and/or its affiliates. All rights reserved.
  * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
  *
  */
 
-import product.*;
-
 /**
- * <h1>dev.Device Class</h1>
- * The <b>dev.Device</b> class extends the abstract class product.Product Unlike most other
+ * <h1>Device Class</h1>
+ * The <b>Device</b> class extends the abstract class Product Unlike most other
  * functional interfaces, {@code Consumer} is expected to operate via side-effects.
  *
  * <p>This is a <a href="package-summary.html">class</a>
@@ -21,7 +19,7 @@ import product.*;
  * @since 0.1
  */
 
-//The dev.Device class extends the Abstract product.Product Class.
+//The Device class extends the Abstract Product Class.
 
 public class Device extends Product {
 
