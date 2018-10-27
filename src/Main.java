@@ -4,6 +4,7 @@
  *
  */
 
+import java.sql.*;
 import java.util.*;
 import java.util.concurrent.*;
 
@@ -21,12 +22,14 @@ import java.util.concurrent.*;
 public class Main {
 
   /**
-   *
    * @param args this is the main
    * @throws InterruptedException when it does
    */
   public static void main(String[] args) throws InterruptedException {
+    testAudio();
+  }
 
+  public static void testProduct() {
     // Simple banner to display current step
     System.out.println("########### Step 2 - Item Type Test ###########\n");
 
@@ -49,13 +52,19 @@ public class Main {
     // simple foreach to iterate through the devicesArrayList
     for (String aDevicesArrayList : devicesArrayList) {
       // Add random timeout to get unique time
-      TimeUnit.SECONDS.sleep(new Random().nextInt(3) + 1);
+      //TimeUnit.SECONDS.sleep(new Random().nextInt(3) + 1);
       // Display the Device information using the toString method
       System.out.println(new Device(aDevicesArrayList).toString() + "\n");
     }
 
     // Making sure the name parameter was not modified
     System.out.println(new Device());
+  }
 
+  public static void testAudio() {
+    // Simple banner to display current step
+    System.out.println("\n########### Step 4 & 5 ###########\n");
+
+    System.out.println(new AudioPlayer("iPod Mini", "MP3"));
   }
 }
