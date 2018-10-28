@@ -4,7 +4,9 @@
  *
  */
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * This is the main driving class for the project
@@ -16,10 +18,6 @@ import java.util.*;
  * @serial
  * @since 0.1
  */
-
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class Main {
 
