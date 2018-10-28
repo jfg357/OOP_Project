@@ -63,12 +63,8 @@ public class Main {
   // Step 16
   // Create print method here
 
-  public static <T extends Iterable<E>, E> void print ( T list){
-
-    for(E element : list) {
-      System.out.println(element);
-    }
-    System.out.println();
+  public static void print(ArrayList<Product> x){
+    System.out.println(x);
   }
 
 }
