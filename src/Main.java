@@ -26,7 +26,9 @@ public class Main {
    * @throws InterruptedException when it does
    */
   public static void main(String[] args) throws InterruptedException {
-    AudioPlayerDriver.testAudioPlayer();
+//    AudioPlayerDriver.testAudioPlayer();
+    MoviePlayerDriver.testMoviePlayer();
+    PlayerDriver.testPlayer();
   }
 
   public static void testProduct() {
