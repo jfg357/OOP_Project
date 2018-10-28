@@ -4,9 +4,7 @@
  *
  */
 
-import java.sql.*;
 import java.util.*;
-import java.util.concurrent.*;
 
 /**
  * This is the main driving class for the project
@@ -28,16 +26,17 @@ public class Main {
   public static void main(String[] args) {
 
     // Write one line of code to create an ArrayList of products
-    ArrayList<Product> alProducts = new ArrayList<>();
+    ArrayList<Product> products = new ArrayList<>();
 
     // Write one line of code to call testCollection and assign the result to the ArrayList
-    alProducts = (ArrayList<Product>) testCollection();
+    products = testCollection();
 
     // Write one line of code to sort the ArrayList
-    //Collections.sort(alProducts);
+
+    Collections.sort(products, Product.prodNameComp);
 
     // Call the print method on the ArrayList
-    print(alProducts);
+    print(products);
   }
 
   // Step 15
@@ -45,8 +44,8 @@ public class Main {
 
   public static ArrayList<Product> testCollection() {
 
-    AudioPlayer a1 = new AudioPlayer("iPod Mini","MP3");
-    AudioPlayer a2 = new AudioPlayer("Walkman","WAV ");
+    AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
+    AudioPlayer a2 = new AudioPlayer("Walkman", "WAV ");
     MoviePlayer m1 = new MoviePlayer("DBPOWER MK101",
         new Screen(" 720x480", 40, 22), MonitorType.LCD);
     MoviePlayer m2 = new MoviePlayer("Pyle PDV156BK",
@@ -63,14 +62,13 @@ public class Main {
 
   // Step 16
   // Create print method here
-  public static void print(ArrayList<Product> products) {
-    //System.out.println(products);
-    for (Product product : products) {
-      // Add random timeout to get unique time
-      //TimeUnit.SECONDS.sleep(new Random().nextInt(3) + 1);
-      // Display the Device information using the toString method
-      System.out.println(product);
+
+  public static <T extends Iterable<E>, E> void print ( T list){
+
+    for(E element : list) {
+      System.out.println(element);
     }
+    System.out.println();
   }
 
 }
@@ -80,9 +78,9 @@ public class Main {
 
   */
 /**
-   * @param args this is the main
-   * @throws InterruptedException when it does
-   *//*
+ * @param args this is the main
+ * @throws InterruptedException when it does
+ *//*
 
   public static void main(String[] args) throws InterruptedException {
 //    AudioPlayerDriver.testAudioPlayer();
