@@ -111,10 +111,10 @@ public abstract class Product implements Item {
    * @return {@code String} formatted per assignment
    */
   public String toString() {
-    return "Manufacturer   : " + Product.MANUFACTURER +
-        "\nSerial Number  : " + Product.serialNumber +
-        "\nDate           : " + Product.manufacturedOn +
-        "\nName           : " + Product.name;
+    return "Manufacturer : " + Product.MANUFACTURER +
+        "\nSerial Number : " + Product.serialNumber +
+        "\nDate : " + Product.manufacturedOn +
+        "\nName : " + Product.name;
   }
 
 }

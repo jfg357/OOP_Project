@@ -60,7 +60,7 @@ public class MoviePlayer extends Product implements MultimediaControl{
    */
   public String toString() {
     return super.toString() +
-        "\nScreen         : " + this.screen +
-        "\nMonitor Type   : " + this.monitorType;
+        "\nScreen : " + this.screen +
+        "\nMonitor Type : " + this.monitorType;
   }
 }
