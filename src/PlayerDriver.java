@@ -21,33 +21,30 @@
 //The MoviePlayerDriver class extends the Abstract Product Class.
 public class PlayerDriver implements MultimediaControl{
 
-  private static String mediaType;
-
-  public void testPlayer() {
-    mediaType = "movie";
-    next();
-    play();
-    previous();
-    stop();
-  }
-
   @Override
   public void play () {
-    System.out.println("Playing" + mediaType);
+    System.out.println("Playing movie");
   }
 
   @Override
   public void stop () {
-    System.out.println("Stopping " + mediaType);
+    System.out.println("Stopping movie");
   }
 
   @Override
   public void previous () {
-    System.out.println("Previous " + mediaType);
+    System.out.println("Previous movie");
   }
 
   @Override
   public void next () {
-    System.out.println("Next " + mediaType);
+    System.out.println("Next movie");
+  }
+
+  public static void testPlayer() {
+    new PlayerDriver().next();
+    new PlayerDriver().play();
+    new PlayerDriver().previous();
+    new PlayerDriver().stop();
   }
 }

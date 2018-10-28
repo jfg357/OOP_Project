@@ -28,7 +28,7 @@ public class Main {
   public static void main(String[] args) throws InterruptedException {
 //    AudioPlayerDriver.testAudioPlayer();
     MoviePlayerDriver.testMoviePlayer();
-//    PlayerDriver.testPlayer();
+    PlayerDriver.testPlayer();
   }
 
   public static void testProduct() {
