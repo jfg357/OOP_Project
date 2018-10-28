@@ -26,7 +26,7 @@ public class Main {
    * @throws InterruptedException when it does
    */
   public static void main(String[] args) throws InterruptedException {
-    testAudio();
+    AudioPlayerDriver.testAudioPlayer();
   }
 
   public static void testProduct() {
@@ -61,15 +61,5 @@ public class Main {
     System.out.println(new Device());
   }
 
-  public static void testAudio() {
-//    Simple banner to display current step
-//    System.out.println("\n########### Step 4 to 6 ###########\n");
-    new AudioPlayer().play();
-    new AudioPlayer().stop();
-    new AudioPlayer().next();
-    new AudioPlayer().previous();
-    System.out.println(new AudioPlayer("iPod Mini", "MP3"));
-    System.out.println(new AudioPlayer("Walkman", "WAV"));
-  }
 
 }
