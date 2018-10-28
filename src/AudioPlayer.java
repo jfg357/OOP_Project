@@ -22,7 +22,6 @@
 
 public class AudioPlayer extends Product implements MultimediaControl {
 
-  //  public String audioSpecification;
   private static String audioSpecification;
   private static ItemType mediaType;
 
