@@ -5,12 +5,12 @@
  */
 
 /**
- * <h1>MoviePlayerDriver Class</h1>
- * The <b>MoviePlayerDriver</b> class extends the abstract class Product Unlike most other
+ * <h1>PlayerDriver Class</h1>
+ * The <b>PlayerDriver</b> class extends the abstract class Product Unlike most other
  * functional interfaces, {@code Consumer} is expected to operate via side-effects.
  *
  * <p>This is a <a href="package-summary.html">class</a>
- * whose functional method is {@link #PlayerDriver()}.
+ * whose functional method is {@link #testPlayer()}.
  *
  * @author Juan Gaviria
  * @version 0.1
@@ -19,8 +19,35 @@
  */
 
 //The MoviePlayerDriver class extends the Abstract Product Class.
-public class PlayerDriver {
+public class PlayerDriver implements MultimediaControl{
 
-  PlayerDriver(){}
+  private static String mediaType;
 
+  public void testPlayer() {
+    mediaType = "movie";
+    next();
+    play();
+    previous();
+    stop();
+  }
+
+  @Override
+  public void play () {
+    System.out.println("Playing" + mediaType);
+  }
+
+  @Override
+  public void stop () {
+    System.out.println("Stopping " + mediaType);
+  }
+
+  @Override
+  public void previous () {
+    System.out.println("Previous " + mediaType);
+  }
+
+  @Override
+  public void next () {
+    System.out.println("Next " + mediaType);
+  }
 }
