@@ -38,9 +38,9 @@ public abstract class Product implements Item {
    */
 
   // Declaration of class variables
-  private static int serialNumber;
-  private static Date manufacturedOn;
-  private static String name;
+  private int serialNumber;
+  private Date manufacturedOn;
+  private String name;
   private static int currentProductionNumber; // Need to keep track of total production
 
   // Implementation of Interface methods
@@ -50,7 +50,7 @@ public abstract class Product implements Item {
    */
   @Override
   public String getName() {
-    return name;
+    return this.name;
   }
 
   /**
@@ -58,8 +58,8 @@ public abstract class Product implements Item {
    */
   @Override
   public Date getManufactureDate() {
-    manufacturedOn = new java.util.Date();
-    return manufacturedOn;
+    this.manufacturedOn = new java.util.Date();
+    return this.manufacturedOn;
   }
 
   /**
@@ -67,7 +67,7 @@ public abstract class Product implements Item {
    */
   @Override
   public void setName(String name) {
-    Product.name = name;
+    this.name = name;
   }
 
   /**
@@ -75,8 +75,8 @@ public abstract class Product implements Item {
    */
   @Override
   public int getSerialNumber() {
-    serialNumber = ++currentProductionNumber;
-    return serialNumber;
+    this.serialNumber = ++currentProductionNumber;
+    return this.serialNumber;
   }
 
   /**
@@ -88,9 +88,9 @@ public abstract class Product implements Item {
 
   // Default Constructor
   public Product() {
-    name = DEFAULTNAME;
-    serialNumber = getSerialNumber();
-    manufacturedOn = getManufactureDate();
+    this.name = DEFAULTNAME;
+    this.serialNumber = getSerialNumber();
+    this.manufacturedOn = getManufactureDate();
   }
 
   // Constructor with product name parameter of the String type
@@ -100,9 +100,9 @@ public abstract class Product implements Item {
    * @param name is the product line name
    */
   public Product(String name) {
-    Product.name = name;
-    serialNumber = getSerialNumber();
-    manufacturedOn = getManufactureDate();
+    this.name = name;
+    this.serialNumber = getSerialNumber();
+    this.manufacturedOn = getManufactureDate();
   }
 
   // Overriding the Java toString method
@@ -112,9 +112,9 @@ public abstract class Product implements Item {
    */
   public String toString() {
     return "Manufacturer : " + Product.MANUFACTURER +
-        "\nSerial Number : " + Product.serialNumber +
-        "\nDate : " + Product.manufacturedOn +
-        "\nName : " + Product.name;
+        "\nSerial Number : " + getSerialNumber() +
+        "\nDate : " + getManufactureDate() +
+        "\nName : " + getName();
   }
 
 }

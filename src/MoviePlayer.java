@@ -21,8 +21,8 @@
 //The MoviePlayer class extends the Abstract Product Class.
 public class MoviePlayer extends Product implements MultimediaControl{
 
-  private static Screen screen;
-  private static MonitorType monitorType;
+  private Screen screen;
+  private MonitorType monitorType;
 
   MoviePlayer(){}
 

@@ -22,8 +22,8 @@
 
 public class AudioPlayer extends Product implements MultimediaControl {
 
-  private static String audioSpecification;
-  private static ItemType mediaType;
+  private String audioSpecification;
+  private ItemType mediaType = ItemType.AUDIO;
 
   // default constructor needed to call the actions
   public AudioPlayer() {
@@ -31,8 +31,8 @@ public class AudioPlayer extends Product implements MultimediaControl {
 
   public AudioPlayer(String name, String audioSpecification) {
     super(name); // Call to 'super()' must be first statement in constructor body
-    this.mediaType = ItemType.AUDIO;
-    this.audioSpecification = audioSpecification;
+    setMediaType(mediaType);
+    setAudioSpecification(audioSpecification);
   }
 
   @Override
@@ -55,6 +55,20 @@ public class AudioPlayer extends Product implements MultimediaControl {
     System.out.println("Next");
   }
 
+  private void setMediaType(ItemType mediaType){
+    this.mediaType = mediaType;
+  }
+  private void setAudioSpecification(String audioSpecification){
+    this.audioSpecification = audioSpecification;
+  }
+  private ItemType getMediaType(){
+    return this.mediaType;
+  }
+  private String getAudioSpecification(){
+    return this.audioSpecification;
+  }
+
+
   // Overriding the Java toString method
 
   /**
@@ -62,7 +76,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
    */
   public String toString() {
     return super.toString() +
-        "\nAudio Spec     : " + AudioPlayer.audioSpecification +
-        "\nType           : " + AudioPlayer.mediaType;
+        "\nAudio Spec     : " + getAudioSpecification() +
+        "\nType           : " + getMediaType();
   }
 }
