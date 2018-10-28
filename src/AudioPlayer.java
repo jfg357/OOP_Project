@@ -65,8 +65,4 @@ public class AudioPlayer extends Product implements MultimediaControl {
         "\nAudio Spec     : " + AudioPlayer.audioSpecification +
         "\nType           : " + AudioPlayer.mediaType;
   }
-
-  public static class play {
-    play() { }
-  }
 }

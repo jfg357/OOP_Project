@@ -21,28 +21,46 @@
 //The MoviePlayer class extends the Abstract Product Class.
 public class MoviePlayer extends Product implements MultimediaControl{
 
+  private static Screen screen;
   private static MonitorType monitorType;
-  private static String screen;
 
   MoviePlayer(){}
 
+  public MoviePlayer(String name, Screen screen, MonitorType monitorType) {
+    super(name); // Call to 'super()' must be first statement in constructor body
+    this.screen = new Screen();
+    this.monitorType = monitorType;
+  }
+
   @Override
   public void play() {
-
+    System.out.println("Playing");
   }
 
   @Override
   public void stop() {
-
+    System.out.println("Stopping");
   }
 
   @Override
   public void previous() {
-
+    System.out.println("Previous");
   }
 
   @Override
   public void next() {
+    System.out.println("Next");
+  }
 
+
+  // Overriding the Java toString method
+
+  /**
+   * @return {@code String} formatted per assignment
+   */
+  public String toString() {
+    return super.toString() +
+        "\nScreen         : " + this.screen +
+        "\nMonitor Type   : " + this.monitorType;
   }
 }
