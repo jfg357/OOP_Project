@@ -27,7 +27,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
   private static ItemType mediaType;
 
   // default constructor needed to call the actions
-  AudioPlayer() {
+  public AudioPlayer() {
   }
 
   public AudioPlayer(String name, String audioSpecification) {
@@ -67,4 +67,7 @@ public class AudioPlayer extends Product implements MultimediaControl {
         "\nType           : " + AudioPlayer.mediaType;
   }
 
+  public static class play {
+    play() { }
+  }
 }
