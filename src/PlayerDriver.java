@@ -10,7 +10,7 @@
  * functional interfaces, {@code Consumer} is expected to operate via side-effects.
  *
  * <p>This is a <a href="package-summary.html">class</a>
- * whose functional method is {@link #testMoviePlayer()}.
+ * whose functional method is {@link #PlayerDriver()}.
  *
  * @author Juan Gaviria
  * @version 0.1
@@ -20,5 +20,7 @@
 
 //The MoviePlayerDriver class extends the Abstract Product Class.
 public class PlayerDriver {
+
+  PlayerDriver(){}
 
 }

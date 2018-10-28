@@ -10,7 +10,7 @@
  * functional interfaces, {@code Consumer} is expected to operate via side-effects.
  *
  * <p>This is a <a href="package-summary.html">class</a>
- * whose functional method is {@link #testMoviePlayer()}.
+ * whose functional method is {@link #MoviePlayer()}.
  *
  * @author Juan Gaviria
  * @version 0.1
@@ -23,6 +23,8 @@ public class MoviePlayer extends Product implements MultimediaControl{
 
   private static MonitorType monitorType;
   private static String screen;
+
+  MoviePlayer(){}
 
   @Override
   public void play() {
