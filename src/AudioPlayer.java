@@ -25,9 +25,25 @@ public class AudioPlayer extends Product implements MultimediaControl {
   private String audioSpecification;
   private ItemType mediaType = ItemType.AUDIO;
 
-  // default constructor needed to call the actions
-  public AudioPlayer() {
+  // Constructor to hit actions
+  public AudioPlayer(String Action) {
+
+    switch (Action.toLowerCase()){
+      case "play":
+        play();
+        break;
+      case "stop":
+        stop();
+        break;
+      case "previous":
+        previous();
+        break;
+      case "next":
+        next();
+        break;
+    }
   }
+
 
   public AudioPlayer(String name, String audioSpecification) {
     super(name); // Call to 'super()' must be first statement in constructor body

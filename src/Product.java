@@ -41,7 +41,7 @@ public abstract class Product implements Item, Comparable<Product> {
   private int serialNumber;
   private Date manufacturedOn;
   private String name;
-  private static int currentProductionNumber = -4; // Need to keep track of total production
+  private static int currentProductionNumber; // Need to keep track of total production
 
   // Implementation of Interface methods
 
@@ -107,7 +107,7 @@ public abstract class Product implements Item, Comparable<Product> {
 
 
   /*Comparator for sorting the list by Product Name*/
-  public static Comparator<Product> prodNameComp = new Comparator<Product>() {
+  //public static Comparator<Product> prodNameComp = new Comparable<Product>() {
 
     /**
      * Compares its two arguments for order.  Returns a negative integer, zero, or a positive
@@ -137,7 +137,6 @@ public abstract class Product implements Item, Comparable<Product> {
      * recommended language is "Note: this comparator imposes orderings that are inconsistent
      * with equals."
      *
-     * @param o1 the first object to be compared.
      * @param o2 the second object to be compared.
      * @return a negative integer, zero, or a positive integer as the first argument is less
      * than, equal to, or greater than the second.
@@ -147,12 +146,9 @@ public abstract class Product implements Item, Comparable<Product> {
      * this comparator.
      */
     @Override
-    public int compare(Product o1, Product o2) {
-      String prodName1 = o1.getName().toLowerCase();
-      String prodName2 = o2.getName().toLowerCase();
-      return prodName1.compareTo(prodName2);
+    public int compareTo(Product o2) {
+      return name.compareTo(o2.getName().toLowerCase());
     }
-  };
 
   // Overriding the Java toString method
 

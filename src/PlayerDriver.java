@@ -41,7 +41,7 @@ public class PlayerDriver implements MultimediaControl{
     System.out.println("Next movie");
   }
 
-  public static void testPlayer() {
+  public static void testPlayer(String Action) {
     new PlayerDriver().next();
     new PlayerDriver().play();
     new PlayerDriver().previous();

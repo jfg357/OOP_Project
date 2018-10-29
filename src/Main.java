@@ -22,6 +22,7 @@ import java.util.List;
 public class Main {
 
   public static void main(String[] args) {
+//    AudioPlayerDriver.testAudioPlayer();
 
     // Write one line of code to create an ArrayList of products
     ArrayList<Product> products = new ArrayList<>();
@@ -31,7 +32,7 @@ public class Main {
 
     // Write one line of code to sort the ArrayList
 
-    Collections.sort(products, Product.prodNameComp);
+    Collections.sort(products);
 
     // Call the print method on the ArrayList
     print(products);
