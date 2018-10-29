@@ -69,13 +69,9 @@ public class Main {
     System.out.println();
   }
 
-  /*public static void print(ArrayList<Product> x){
-    System.out.println(x);
-  }*/
-
 }
 
-/*
+/* My old Main public
 public class Main {
 
   */

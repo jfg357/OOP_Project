@@ -10,7 +10,7 @@
  * functional interfaces, {@code Consumer} is expected to operate via side-effects.
  *
  * <p>This is a <a href="package-summary.html">class</a>
- * whose functional method is {@link #testPlayer()}.
+ * whose functional method is {@link #testPlayer(String)}.
  *
  * @author Juan Gaviria
  * @version 0.1
