@@ -23,13 +23,16 @@ public class MoviePlayerDriver {
 
   public static void testMoviePlayer() {
 
-    System.out.println(new MoviePlayer("DBPOWER MK101",new Screen("720x480", 40,22), MonitorType.LCD));
-    System.out.println(new MoviePlayer("Pyle PDV156BK",new Screen("1366x768", 40,22), MonitorType.LED));
+    MoviePlayer mp1 = new MoviePlayer("DBPOWER MK101",new Screen("720x480", 40,22), MonitorType.LCD);
+    MoviePlayer mp2 = new MoviePlayer("Pyle PDV156BK",new Screen("1366x768", 40,22), MonitorType.LED);
 
-    new MoviePlayer().next();
-    new MoviePlayer().play();
-    new MoviePlayer().previous();
-    new MoviePlayer().stop();
+    mp1.next();
+    mp1.play();
+    mp1.previous();
+    mp1.stop();
+
+    System.out.println(mp1);
+    System.out.println(mp2);
 
   }
 }
