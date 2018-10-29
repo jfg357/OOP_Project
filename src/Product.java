@@ -22,7 +22,7 @@ import java.util.*; // Need to import the Java Utilities to use builtin Date met
  * whose functional method is {@link #Product(String)}}.
  *
  * @author Juan Gaviria
- * @version 0.1
+ * @version 0.3
  * @serial
  * @since 0.1
  */
@@ -69,19 +69,19 @@ public abstract class Product implements Item, Comparable<Product> {
   }
 
   /**
+   * @param pn gets set with setter
+   */
+  @Override
+  public void setProductionNumber(int pn) {
+    ++currentProductionNumber;
+  }
+
+  /**
    * @param name sets the name of the product
    */
   @Override
   public void setName(String name) {
     this.name = name;
-  }
-
-  /**
-   * @param pn gets set with setter
-   */
-  @Override
-  public void setProductionNumber(int pn) {
-    currentProductionNumber++;
   }
 
   // Default Constructor
@@ -98,8 +98,9 @@ public abstract class Product implements Item, Comparable<Product> {
    * @param name is the product line name
    */
   public Product(String name) {
+    setProductionNumber(currentProductionNumber);
     this.name = name;
-    this.serialNumber = ++currentProductionNumber;
+    this.serialNumber = currentProductionNumber;
     this.manufacturedOn = new java.util.Date();
   }
 
