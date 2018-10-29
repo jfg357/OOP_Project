@@ -12,7 +12,7 @@ import java.util.*;
  * functional interfaces, {@code Consumer} is expected to operate via side-effects.
  *
  * <p>This is a <a href="package-summary.html">class</a>
- * whose functional method is {@link #MoviePlayer()}.
+ * whose functional method is {@link #MoviePlayer(String, Screen, MonitorType)}.
  *
  * @author Juan Gaviria
  * @version 0.1
@@ -25,8 +25,6 @@ public class MoviePlayer extends Product implements MultimediaControl{
 
   private Screen screen;
   private MonitorType monitorType;
-
-  MoviePlayer(){}
 
   public MoviePlayer(String name, Screen screen, MonitorType monitorType) {
     super(name); // Call to 'super()' must be first statement in constructor body

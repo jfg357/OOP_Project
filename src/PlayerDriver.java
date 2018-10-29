@@ -10,10 +10,9 @@
  * functional interfaces, {@code Consumer} is expected to operate via side-effects.
  *
  * <p>This is a <a href="package-summary.html">class</a>
- * whose functional method is {@link #testPlayer(String)}.
  *
  * @author Juan Gaviria
- * @version 0.1
+ * @version 0.2
  * @serial
  * @since 0.2
  */
@@ -41,10 +40,4 @@ public class PlayerDriver implements MultimediaControl{
     System.out.println("Next movie");
   }
 
-  public static void testPlayer(String Action) {
-    new PlayerDriver().next();
-    new PlayerDriver().play();
-    new PlayerDriver().previous();
-    new PlayerDriver().stop();
-  }
 }
