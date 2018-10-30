@@ -40,7 +40,8 @@ public abstract class Product implements Item, Comparable<Product> {
   private int serialNumber;
   private Date manufacturedOn;
   private String name;
-  private static int currentProductionNumber = 0; // Need to keep track of total production
+
+  private static int currentProductionNumber; // Need to keep track of total production
 
   // Implementation of Interface methods
   /**
@@ -95,12 +96,16 @@ public abstract class Product implements Item, Comparable<Product> {
     return this.serialNumber;
   }
 
+  public static void setPN(int cPN){
+    Product.currentProductionNumber = ++cPN;
+  }
+
   /**
    * @param pn gets set with setter
    */
   @Override
   public void setProductionNumber(int pn) {
-    ++currentProductionNumber;
+    setPN(pn);
   }
 
   /**
