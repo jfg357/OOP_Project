@@ -12,13 +12,21 @@
  * <p>This is a <a href="package-summary.html">class</a>
  *
  * @author Juan Gaviria
- * @version 0.2
+ * @version 0.3
  * @serial
  * @since 0.2
  */
 
 //The MoviePlayerDriver class extends the Abstract Product Class.
 public class PlayerDriver implements MultimediaControl{
+
+  public static void testPlayer() {
+    PlayerDriver player1 = new PlayerDriver();
+    player1.play();
+    player1.stop();
+    player1.previous();
+    player1.next();
+  }
 
   @Override
   public void play () {
