@@ -85,7 +85,7 @@ public abstract class Product implements Item, Comparable<Product> {
    */
   @Override
   public Date getManufactureDate() {
-    return this.manufacturedOn;
+    return (Date)manufacturedOn.clone();
   }
 
   /**
@@ -96,6 +96,10 @@ public abstract class Product implements Item, Comparable<Product> {
     return this.serialNumber;
   }
 
+  /**
+   *
+   * @param cPN increase the production during instance
+   */
   public static void setPN(int cPN){
     Product.currentProductionNumber = ++cPN;
   }
