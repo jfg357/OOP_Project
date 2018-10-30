@@ -27,12 +27,12 @@ public class Main {
    */
 
   public static void main(String[] args) {
-    AudioPlayerDriver.testAudioPlayer();
-    MoviePlayerDriver.testMoviePlayer();
-    PlayerDriver.testPlayer();
-    AudioPlayerDriver.testAudioPlayer();
+//    AudioPlayerDriver.testAudioPlayer();
+//    MoviePlayerDriver.testMoviePlayer();
+//    PlayerDriver.testPlayer();
+//    AudioPlayerDriver.testAudioPlayer();
 
-    /*// Write one line of code to create an ArrayList of products
+    // Write one line of code to create an ArrayList of products
     ArrayList<Product> products;
 
     // Write one line of code to call testCollection and assign the result to the ArrayList
@@ -43,7 +43,7 @@ public class Main {
     Collections.sort(products);
 
     // Call the print method on the ArrayList
-    print(products);*/
+    print(products);
   }
 
   // Step 15
