@@ -22,10 +22,9 @@ import java.util.List;
 public class Main {
 
   /**
-   * @param args this is the main
-   * @throws InterruptedException when it does
+   *
+   * @param args for the default main
    */
-
   public static void main(String[] args) {
 //    AudioPlayerDriver.testAudioPlayer();
 //    MoviePlayerDriver.testMoviePlayer();
@@ -49,17 +48,17 @@ public class Main {
   // Step 15
   // Complete the header for the testCollection method here
 
+  /**
+   * @return list of items
+   */
   public static ArrayList testCollection() {
-
     AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
     AudioPlayer a2 = new AudioPlayer("Walkman", "WAV ");
     MoviePlayer m1 = new MoviePlayer("DBPOWER MK101",
         new Screen(" 720x480", 40, 22), MonitorType.LCD);
     MoviePlayer m2 = new MoviePlayer("Pyle PDV156BK",
         new Screen("1366x768", 40, 22), MonitorType.LED);
-
     ArrayList<Product> products = new ArrayList<>();
-
     products.add(a1);
     products.add(a2);
     products.add(m1);
@@ -70,61 +69,16 @@ public class Main {
   // Step 16
   // Create print method here
 
+  /**
+   *
+   * @param list to be sorted
+   * @param <T> Generic
+   * @param <E> Generic
+   */
   public static <T extends Iterable<E>, E> void print(T list) {
     for (E element : list) {
       System.out.println(element);
     }
     System.out.println();
   }
-
 }
-
-/* My old Main public
-public class Main {
-
-  */
-/**
- * @param args this is the main
- * @throws InterruptedException when it does
- *//*
-
-  public static void main(String[] args) throws InterruptedException {
-//    AudioPlayerDriver.testAudioPlayer();
-    MoviePlayerDriver.testMoviePlayer();
-    PlayerDriver.testPlayer();
-  }
-
-  public static void testProduct() {
-    // Simple banner to display current step
-    System.out.println("########### Step 2 - Item Type Test ###########\n");
-
-    // Iteration and printing of the enum ItemType using Lambda expression
-    EnumSet.allOf(ItemType.class)
-        .forEach(type -> System.out.println("Code: " + type.getCode() + " -> " + type));
-
-    // Simple banner to display current step
-    System.out.println("\n########### Step 3 ###########\n");
-    ArrayList<String> devicesArrayList = new ArrayList<>();
-    devicesArrayList.add("DVD");
-    devicesArrayList.add("CD");
-    devicesArrayList.add("Blu-ray");
-    devicesArrayList.add("4K");
-    devicesArrayList.add("3D");
-
-    // Display the Device information using the toString method - default constructor
-    System.out.println(new Device() + "\n");
-
-    // simple foreach to iterate through the devicesArrayList
-    for (String aDevicesArrayList : devicesArrayList) {
-      // Add random timeout to get unique time
-      //TimeUnit.SECONDS.sleep(new Random().nextInt(3) + 1);
-      // Display the Device information using the toString method
-      System.out.println(new Device(aDevicesArrayList).toString() + "\n");
-    }
-
-    // Making sure the name parameter was not modified
-    System.out.println(new Device());
-  }
-
-
-}*/
