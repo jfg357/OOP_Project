@@ -49,7 +49,7 @@ public class Main {
   // Step 15
   // Complete the header for the testCollection method here
 
-  public static ArrayList<Product> testCollection() {
+  public static ArrayList testCollection() {
 
     AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
     AudioPlayer a2 = new AudioPlayer("Walkman", "WAV ");

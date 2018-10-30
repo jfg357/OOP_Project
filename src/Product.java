@@ -22,7 +22,7 @@ import java.util.*; // Need to import the Java Utilities to use builtin Date met
  * whose functional method is {@link #Product(String)}}.
  *
  * @author Juan Gaviria
- * @version 0.3
+ * @version 0.4
  * @serial
  * @since 0.1
  */
@@ -43,6 +43,33 @@ public abstract class Product implements Item, Comparable<Product> {
   private static int currentProductionNumber = 0; // Need to keep track of total production
 
   // Implementation of Interface methods
+  /**
+   * @param name sets the name of the product
+   */
+  @Override
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  // Default Constructor
+  public Product() {
+    setProductionNumber(currentProductionNumber);
+    this.name = DEFAULTNAME;
+    this.serialNumber = currentProductionNumber;
+    this.manufacturedOn = new java.util.Date();
+  }
+
+  // Constructor with product name parameter of the String type
+
+  /**
+   * @param name is the product line name
+   */
+  public Product(String name) {
+    setProductionNumber(currentProductionNumber);
+    this.name = name;
+    this.serialNumber = currentProductionNumber;
+    this.manufacturedOn = new java.util.Date();
+  }
 
   /**
    * @return {@code name}
@@ -75,38 +102,6 @@ public abstract class Product implements Item, Comparable<Product> {
   public void setProductionNumber(int pn) {
     ++currentProductionNumber;
   }
-
-  /**
-   * @param name sets the name of the product
-   */
-  @Override
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  // Default Constructor
-  public Product() {
-    setProductionNumber(currentProductionNumber);
-    this.name = DEFAULTNAME;
-    this.serialNumber = currentProductionNumber;
-    this.manufacturedOn = new java.util.Date();
-  }
-
-  // Constructor with product name parameter of the String type
-
-  /**
-   * @param name is the product line name
-   */
-  public Product(String name) {
-    setProductionNumber(currentProductionNumber);
-    this.name = name;
-    this.serialNumber = currentProductionNumber;
-    this.manufacturedOn = new java.util.Date();
-  }
-
-
-  /*Comparator for sorting the list by Product Name*/
-  //public static Comparator<Product> prodNameComp = new Comparable<Product>() {
 
   /**
    * Compares its two arguments for order.  Returns a negative integer, zero, or a positive integer
@@ -145,7 +140,6 @@ public abstract class Product implements Item, Comparable<Product> {
    */
   @Override
   public int compareTo(Product o) {
-
     return name.compareTo(o.getName());
   }
 
@@ -160,5 +154,4 @@ public abstract class Product implements Item, Comparable<Product> {
         "\nDate : " + this.manufacturedOn +
         "\nName : " + this.name;
   }
-
 }
