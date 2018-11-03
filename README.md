@@ -1,4 +1,4 @@
-# Alpha
+# OOP Project
 Template in Java for creating and recording all future multimedia device items for OraclProduction.
 ## Installation
 Clone the repository and run in Java >= 8
