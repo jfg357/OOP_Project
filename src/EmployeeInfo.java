@@ -87,9 +87,9 @@ public class EmployeeInfo {
   private void setDeptId() {
     String id = getDeptId();
     if (validId(id)) {
-      this.deptId = id;
-    }
-    else{
+      this.deptId = reverseString(id);
+//      this.deptId = id;
+    } else {
       this.deptId = "None01";
     }
   }
@@ -109,6 +109,18 @@ public class EmployeeInfo {
     } else {
       return false;
     }
+  }
+
+  public String reverseString(String id) {
+    byte [] strAsByteArray = id.getBytes();
+    byte [] result = new byte [strAsByteArray.length];
+
+    // Store result in reverse order into the
+    // result byte[]
+    for (int i = 0; i<strAsByteArray.length; i++) {
+      result[i] = strAsByteArray[strAsByteArray.length - i - 1];
+    }
+    return new String(result);
   }
 
   public String toString() {
