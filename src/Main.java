@@ -32,17 +32,22 @@ public class Main {
 //    AudioPlayerDriver.testAudioPlayer();
 
     // Write one line of code to create an ArrayList of products
-    ArrayList<Product> products;
+    //ArrayList<Product> products;
 
     // Write one line of code to call testCollection and assign the result to the ArrayList
-    products = testCollection();
+    //products = testCollection();
 
     // Write one line of code to sort the ArrayList
 
-    Collections.sort(products);
+    //Collections.sort(products);
 
     // Call the print method on the ArrayList
-    print(products);
+    //print(products);
+
+    // Step 18
+    System.out.println("Test Employee Info");
+    EmployeeInfo employee = new EmployeeInfo();
+    System.out.println(employee.getCode());
   }
 
   // Step 15
