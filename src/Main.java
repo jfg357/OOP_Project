@@ -14,7 +14,7 @@ import java.util.List;
  * <p>This is a <a href="package-summary.html">driving method</a>
  *
  * @author Juan Gaviria
- * @version 0.10
+ * @version 0.12
  * @serial
  * @since 0.1
  */
@@ -45,9 +45,14 @@ public class Main {
     //print(products);
 
     // Step 18
-    System.out.println("Test Employee Info");
+    /*System.out.println("Test Employee Info");
     EmployeeInfo employee = new EmployeeInfo();
-    System.out.println(employee.getCode());
+    System.out.println(employee.getCode());*/
+
+    // Step 19
+    System.out.println("Test Employee Department ID");
+    EmployeeInfo employee = new EmployeeInfo();
+    System.out.println(employee.toString());
   }
 
   // Step 15

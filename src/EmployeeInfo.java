@@ -5,6 +5,7 @@
  */
 
 import java.util.Scanner;
+import java.util.regex.*;
 
 /**
  * The program is required to create an audit trail on its tests of the production line so that it
@@ -25,15 +26,21 @@ public class EmployeeInfo {
   private StringBuilder name;
   private String code;
 
+  private String deptId;
+  private Pattern p = Pattern.compile("^[A-Z][a-z]{3}[0-9]{2}$");
+  private Scanner in;
+
   /**
    * Set the name using the default constructor
    */
   public EmployeeInfo() {
+    in = new Scanner(System.in);
     setName();
+    setDeptId();
+    in.close();
   }
 
   /**
-   *
    * @return name
    */
   public StringBuilder getName() {
@@ -41,7 +48,6 @@ public class EmployeeInfo {
   }
 
   /**
-   *
    * @return code
    */
   public String getCode() {
@@ -55,24 +61,46 @@ public class EmployeeInfo {
   }
 
   private void createEmployeeCode(StringBuilder name) {
-    if (checkName(name)) { //valid, includes space
+    // Test for validity - spaces
+    if (checkName(name)) {
       code = name.charAt(0) + name.substring(name.indexOf(" ") + 1);
     } else {
-      code = "guest";
+      code = "None";
     }
   }
 
   /**
-   *
    * @return nameString
    */
   private String inputName() {
-    String nameString;
-    Scanner scan = new Scanner(System.in);
     System.out.print("Please enter your first and last name: ");
-    nameString = scan.nextLine();
-    scan.close();
+    String nameString = in.nextLine();
     return nameString;
+  }
+
+  public String getDeptId() {
+    System.out.print("Please enter the department ID: ");
+    String id = in.nextLine();
+    return id;
+  }
+
+  private void setDeptId() {
+    String id = getDeptId();
+    if (validId(id)) {
+      this.deptId = id;
+    }
+    else{
+      this.deptId = "None01";
+    }
+  }
+
+  private String getId() {
+    return this.deptId;
+  }
+
+  private boolean validId(String id) {
+    Matcher matcher = p.matcher(id);
+    return matcher.matches();
   }
 
   private boolean checkName(StringBuilder name) {
@@ -81,6 +109,11 @@ public class EmployeeInfo {
     } else {
       return false;
     }
+  }
+
+  public String toString() {
+    return "Employee Code : " + this.code +
+        "\nDepartment Number : " + this.deptId;
   }
 
 }
