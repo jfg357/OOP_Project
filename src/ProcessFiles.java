@@ -14,10 +14,10 @@ import java.util.*;
  * EmployeeInfo that will allow the user to input their full name and then create a user id of their
  * first initial and surname.
  *
- * <p>This is a <a href="package-summary.html">Employee Info Class</a>
+ * <p>This is a <a href="package-summary.html">Process File Class</a>
  *
  * @author Juan Gaviria
- * @version 0.2
+ * @version 0.3
  * @serial
  * @since 0.4
  */
@@ -30,8 +30,6 @@ public class ProcessFiles extends Exception {
   private Path p3 = p.resolve(p2);
 
   /**
-   *
-   *
    * @param obj
    */
   public ProcessFiles(Object obj) {
@@ -56,23 +54,21 @@ public class ProcessFiles extends Exception {
     }
   }
 
-  /**
-   *
+/*  *//**
    * @param objName
    * @throws IOException
-   */
+   *//*
   public void WriteFile(EmployeeInfo objName) throws IOException {
     WriteFile(objName);
   }
 
-  /**
-   *
+  *//**
    * @param products
    * @throws IOException
-   */
+   *//*
   public void WriteFile(ArrayList<Product> products) throws IOException {
     WriteFile(products);
-  }
+  }*/
 
   /**
    *
