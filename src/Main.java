@@ -22,24 +22,23 @@ import java.util.List;
 public class Main {
 
   /**
-   *
    * @param args for the default main
    */
   public static void main(String[] args) {
-//    AudioPlayerDriver.testAudioPlayer();
-//    MoviePlayerDriver.testMoviePlayer();
-//    PlayerDriver.testPlayer();
-//    AudioPlayerDriver.testAudioPlayer();
+    AudioPlayerDriver.testAudioPlayer();
+    MoviePlayerDriver.testMoviePlayer();
+    PlayerDriver.testPlayer();
+    AudioPlayerDriver.testAudioPlayer();
 
     // Write one line of code to create an ArrayList of products
-    //ArrayList<Product> products;
+    ArrayList<Product> products;
 
     // Write one line of code to call testCollection and assign the result to the ArrayList
-    //products = testCollection();
+    products = testCollection();
 
     // Write one line of code to sort the ArrayList
 
-    //Collections.sort(products);
+    Collections.sort(products);
 
     // Call the print method on the ArrayList
     //print(products);
@@ -50,9 +49,16 @@ public class Main {
     System.out.println(employee.getCode());*/
 
     // Step 19
-    System.out.println("Test Employee Department ID");
+   /* System.out.println("Test Employee Department ID");
     EmployeeInfo employee = new EmployeeInfo();
-    System.out.println(employee.toString());
+    System.out.println(employee.toString());*/
+
+    // Step 20
+    System.out.println("Store the results");
+    EmployeeInfo employee = new EmployeeInfo();
+    new ProcessFiles(employee);
+    new ProcessFiles(products);
+
   }
 
   // Step 15
@@ -80,7 +86,6 @@ public class Main {
   // Create print method here
 
   /**
-   *
    * @param list to be sorted
    * @param <T> Generic
    * @param <E> Generic
