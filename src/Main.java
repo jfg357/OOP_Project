@@ -53,7 +53,7 @@ public class Main {
     EmployeeInfo employee = new EmployeeInfo();
     System.out.println(employee.toString());*/
 
-    // Step 20
+    // Step 20-21
     System.out.println("Store the results");
     EmployeeInfo employee = new EmployeeInfo();
     new ProcessFiles(employee);
