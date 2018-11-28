@@ -54,11 +54,13 @@ public class Main {
     System.out.println(employee.toString());*/
 
     // Step 20-21
-    System.out.println("Store the results");
+    /*System.out.println("Store the results");
     EmployeeInfo employee = new EmployeeInfo();
     new ProcessFiles(employee);
-    new ProcessFiles(products);
+    new ProcessFiles(products);*/
 
+    // Step 22
+    new ViewFileInfo();
   }
 
   // Step 15
