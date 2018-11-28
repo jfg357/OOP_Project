@@ -30,7 +30,7 @@ public class ProcessFiles extends Exception {
   private Path p3 = p.resolve(p2);
 
   /**
-   * @param obj
+   * @param obj is the Java object to be processed.
    */
   public ProcessFiles(Object obj) {
     try {
@@ -54,26 +54,23 @@ public class ProcessFiles extends Exception {
     }
   }
 
-/*  *//**
-   * @param objName
+/*  **
+   * @param objName is the Java object to be processed.
    * @throws IOException
-   *//*
   public void WriteFile(EmployeeInfo objName) throws IOException {
     WriteFile(objName);
   }
 
-  *//**
-   * @param products
+   * @param products is the Java object to be processed.
    * @throws IOException
-   *//*
+   *
   public void WriteFile(ArrayList<Product> products) throws IOException {
     WriteFile(products);
   }*/
 
   /**
-   *
-   * @param objName
-   * @throws IOException
+   * @param objName is the Java object to be processed.
+   * @throws IOException is Java exception handler.
    */
   public void WriteFile(Object objName) throws IOException {
     CreateDirectory();
