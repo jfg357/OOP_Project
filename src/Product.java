@@ -44,6 +44,7 @@ public abstract class Product implements Item, Comparable<Product> {
   private static int currentProductionNumber; // Need to keep track of total production
 
   // Implementation of Interface methods
+
   /**
    * @param name sets the name of the product
    */
@@ -85,7 +86,7 @@ public abstract class Product implements Item, Comparable<Product> {
    */
   @Override
   public Date getManufactureDate() {
-    return (Date)manufacturedOn.clone();
+    return (Date) manufacturedOn.clone();
   }
 
   /**
@@ -97,10 +98,9 @@ public abstract class Product implements Item, Comparable<Product> {
   }
 
   /**
-   *
    * @param cPN increase the production during instance
    */
-  public static void setPN(int cPN){
+  public static void setPN(int cPN) {
     Product.currentProductionNumber = ++cPN;
   }
 
@@ -158,9 +158,9 @@ public abstract class Product implements Item, Comparable<Product> {
    * @return {@code String} formatted per assignment
    */
   public String toString() {
-    return "Manufacturer : " + Product.MANUFACTURER +
-        "\nSerial Number : " + this.serialNumber +
-        "\nDate : " + this.manufacturedOn +
-        "\nName : " + this.name;
+    return "Manufacturer : " + Product.MANUFACTURER + "\n" +
+        "Serial Number : " + this.serialNumber + "\n" +
+        "Date : " + this.manufacturedOn + "\n" +
+        "Name : " + this.name + "\n";
   }
 }

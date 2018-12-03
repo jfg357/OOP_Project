@@ -6,7 +6,6 @@
 
 import java.io.*;
 import java.nio.file.*;
-import java.util.*;
 
 /**
  * The program is required to create an audit trail on its tests of the production line so that it

@@ -124,8 +124,8 @@ public class EmployeeInfo {
   }
 
   public String toString() {
-    return "Employee Code : " + this.code +
-        "\nDepartment Number : " + this.deptId;
+    return "Employee Code : " + this.code + "\n" +
+        "Department Number : " + this.deptId + "\n";
   }
 
 }

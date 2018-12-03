@@ -25,10 +25,10 @@ public class Main {
    * @param args for the default main
    */
   public static void main(String[] args) {
-    AudioPlayerDriver.testAudioPlayer();
+    /*AudioPlayerDriver.testAudioPlayer();
     MoviePlayerDriver.testMoviePlayer();
     PlayerDriver.testPlayer();
-    AudioPlayerDriver.testAudioPlayer();
+    AudioPlayerDriver.testAudioPlayer();*/
 
     // Write one line of code to create an ArrayList of products
     ArrayList<Product> products;
@@ -54,10 +54,10 @@ public class Main {
     System.out.println(employee.toString());*/
 
     // Step 20-21
-    /*System.out.println("Store the results");
+    System.out.println("Store the results");
     EmployeeInfo employee = new EmployeeInfo();
     new ProcessFiles(employee);
-    new ProcessFiles(products);*/
+    new ProcessFiles(products);
 
     // Step 22
     new ViewFileInfo();
@@ -71,7 +71,7 @@ public class Main {
    */
   public static ArrayList testCollection() {
     AudioPlayer a1 = new AudioPlayer("iPod Mini", "MP3");
-    AudioPlayer a2 = new AudioPlayer("Walkman", "WAV ");
+    AudioPlayer a2 = new AudioPlayer("Walkman", "WAV");
     MoviePlayer m1 = new MoviePlayer("DBPOWER MK101",
         new Screen(" 720x480", 40, 22), MonitorType.LCD);
     MoviePlayer m2 = new MoviePlayer("Pyle PDV156BK",

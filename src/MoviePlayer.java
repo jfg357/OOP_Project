@@ -26,10 +26,10 @@ public class MoviePlayer extends Product implements MultimediaControl{
   private Screen screen;
   private MonitorType monitorType;
 
-  public MoviePlayer(String name, Screen screen, MonitorType monitorType) {
+  public MoviePlayer(String name, Screen screen, MonitorType mType) {
     super(name); // Call to 'super()' must be first statement in constructor body
     this.screen = new Screen();
-    this.monitorType = monitorType;
+    this.monitorType = mType;
   }
 
   @Override
@@ -60,7 +60,7 @@ public class MoviePlayer extends Product implements MultimediaControl{
    */
   public String toString() {
     return super.toString() +
-        "\nScreen : " + this.screen +
-        "\nMonitor Type : " + this.monitorType;
+        "Screen : " + this.screen +
+        "Monitor Type : " + this.monitorType + "\n";
   }
 }
