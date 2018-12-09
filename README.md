@@ -38,7 +38,10 @@ it fit our curriculum. :+1:
 ## Credits
 * Oracle
 * IntelliJ
-* @profvanselow
+* [@profvanselow](https://github.com/profvanselow)
+* [@Actony25](https://github.com/Actony25)
+* [@TPettis](https://github.com/TPettis)
+* [@exuberantram](https://github.com/exuberantram)
 ## License
 Copyright 2018 Juan Gaviria
 
