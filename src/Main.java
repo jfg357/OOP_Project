@@ -27,6 +27,7 @@ public class Main {
     Scanner scan = new Scanner(System.in);
     boolean programState = true; //User choice for allowing user to continue using the program
     int mainMenuChoice = 0; //Variable for storing users choice
+    int menuChoiceCounter = 0; //Variable for storing users choice
     int productMenuChoice = 0; //Variable for storing users product choice
     ArrayList<Product> products = new ArrayList<>(); //ArrayList for the collection of products
 
@@ -34,39 +35,48 @@ public class Main {
 
     do { //Loop for continued program state. Will continue if true
       do { //Loop for menu choice. Will continue if answer is not between 1 and 3
-        System.out.println("What would you like to do today? (Enter a number)");
+        if ((mainMenuChoice < 1 || mainMenuChoice > 3) && menuChoiceCounter > 0) {
+          System.out
+              .println("You entered an invalid choice, please enter a VALID number and hit enter!");
+        } else {
+          System.out.println("What would you like to do today? (Enter a number)");
+        }
         System.out.println("1. Add a new product");
         System.out.println("2. Display current products");
         System.out.println("3. Exit the system");
 
         try {
+          menuChoiceCounter++;
           mainMenuChoice = scan.nextInt();
         } catch (InputMismatchException ime) {
           System.out.println("Incorrect input");
           System.out.println("Please enter an option number\n");
-          scan.nextLine(); //Empties the scanner
-        }
-      } while (mainMenuChoice < 1
-          || mainMenuChoice > 3); //End menuChoice loop. Will end if answer is between 1 and 3
-
+          scan.nextLine();
+        } // End Catch from Main Menu Choice
+      } while (mainMenuChoice < 1 || mainMenuChoice > 3); //End mainMenuChoice loop.
+      int producChoiceCounter = 0; // Reset counter
       switch (mainMenuChoice) {
         case 1: //Start case 1: Add new product
           do { //Loop for productMenuChoice. Will continue if acceptable input is given
-            System.out.println("Which product would you like to add? (Enter a number)");
+            if ((productMenuChoice < 1 || productMenuChoice > 3) && producChoiceCounter > 0) {
+              System.out.println(
+                  "You entered an invalid choice, please enter a VALID number and hit enter!");
+            } else {
+              System.out.println("Which product would you like to add? (Enter a number)");
+            }
             System.out.println("1. Audio Player");
             System.out.println("2. Movie Player");
             System.out.println("3. Return to previous menu");
-
             try {
+              producChoiceCounter++;
               productMenuChoice = scan.nextInt();
-            } catch (InputMismatchException ime) {
+            }
+            catch (InputMismatchException ime) {
               System.out.println("Wrong input");
               System.out.println("Please enter an option number\n");
-              scan.nextLine(); //Empties the scanner
+              scan.nextLine();
             }
-          } while (productMenuChoice < 1
-              || productMenuChoice
-              > 3); //End productMenuChoice loop. Will end if answer is between 1 and 3
+          } while (productMenuChoice < 1 || productMenuChoice > 3); //End productMenuChoice loop.
 
           switch (productMenuChoice) {
             case 1: //Start case 1: Audio Player
